@@ -46,10 +46,13 @@ h1, h2, p {
   
 .try{
 	text-decoration: none;
-	color: white;
+	color: rgb(238, 250, 255);
 	width: auto;
 	display: block;
 	font-size: 50px;
+}
+.try:hover{
+	color: rgb(197, 239, 255);
 }
   
 #quizzie {
