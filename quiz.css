@@ -152,9 +152,12 @@ h1 {
 	text-align: center;
 	color: #ffffff;
 	line-height: 45px;
-	
 }
-  
+.answer-wrap h2 {
+	text-align: center;
+	color: #ffffff;
+	line-height: 45px;	
+} 
  /*------------------------------------------------Navbar-----------------------------------------------------------------------------*/
 nav { 
 	margin: 0;
