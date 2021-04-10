@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Marino</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section class="header">
+        <!-- -------------------------Navbar-------------------------- -->
+        <nav id=navbar>
+            <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop" />
+                    <ul class="menu">
+                        <li><a href="main.html">Home</a></li>
+                            <li>
+                                <label for="drop-1" class="toggle">Sunlight Zone</label>
+                                    <a href="sunlight.html">Sunlight Zone</a>
+                                        <input type="checkbox" id="drop-1"/>
+                                    <ul>
+                                        <li><a href="sunlight.html#dolphin">Dolphin</a></li>
+                                        <li><a href="sunlight.html#jellyfish">Shark</a></li>
+                                        <li><a href="sunlight.html#turtle">Turtle</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-2" class="toggle">Twilight Zone</label>
+                                    <a href="twilight.html">Twilight Zone</a>
+                                        <input type="checkbox" id="drop-2"/>
+                                    <ul>
+                                        <li><a href="twilight.html#shark">Shark</a></li>
+                                        <li><a href="twilight.html#octopus">Common Octopus</a></li>
+                                        <li><a href="twilight.html#whale">Whale</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-3" class="toggle">Midnight Zone</label>
+                                     <a href="midnight.html">Midnight Zone</a>
+                                         <input type="checkbox" id="drop-3"/>
+                                     <ul>
+                                        <li><a href="midnight.html#starfish">Starfish</a></li>
+                                        <li><a href="midnight.html#viperfish">Viperfish</a></li>
+                                        <li><a href="midnight.html#vampire">Vampire Squid</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-4" class="toggle">The Abyss</label>
+                                    <a href="abyss.html">The Abyss</a>
+                                        <input type="checkbox" id="drop-4"/>
+                                <ul>
+                                        <li><a href="abyss.html#angler">Anglerfish</a></li>
+                                        <li><a href="abyss.html#dumbo">Dumbo Octopus</a></li>
+                                        <li><a href="abyss.html#gulper">Gulper Eel</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-5" class="toggle">The Trenches</label>
+                                     <a href="trenches.html">The Trenches</a>
+                                         <input type="checkbox" id="drop-5"/>
+                                <ul>
+                                        <li><a href="trenches.html#giant">Giant Tubeworms</a></li>
+                                        <li><a href="trenches.html#amphipods">Amphipods</a></li>
+                                        <li><a href="trenches.html#cusk">Cusk Eel</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-6" class="toggle">Quizzes</label>
+                                    <a href="#">Quizzes</a>
+                                        <input type="checkbox" id="drop-6"/>
+                                <ul>
+                                        <li><a href="quiz1.html">Sunlight Zone</a></li>
+                                        <li><a href="quiz2.html">Twilight Zone</a></li>
+                                        <li><a href="quiz3.html">Midnight Zone</a></li>
+                                        <li><a href="quiz4.html">Abyss Zone</a></li>
+                                        <li><a href="quiz5.html">Trenches Zone</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+</section>
+<!-- -------------------------Quiz-------------------------- -->
+<div id="quizzie">
+  <h1>Midnight Zone Quiz</h1>
+    <ul class="quiz-step step1 current">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #1: Starfish can not regenerate their body</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">True</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap"> 
+                <p class="answer-text">False</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step2">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #2: What do viperfish use to help their body from other fish?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">"Fishing lure"</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Photophores</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step3">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #3: What color are Vampire Squid's eyes?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Green or Yellow</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Red or Blue</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step4">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #4: How many feet on average does a starfish have?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Thousands</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Hundreds</p>
+            </div>
+        </li>
+    </ul>
+    <ul id="results">
+        <li class="results-inner">
+            <a href="quiz3.html" class="try">Try Again</a>
+            <p>Your result is:</p>
+            <h1></h1>
+            <p class="desc"></p>
+        </li>
+    </ul>
+</div>
+<!-- -------------------------Javascript-------------------------- -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="quiz.js"></script>
+  <script type="text/javascript">
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+        
+        else{
+            $('nav').removeClass('black');
+        }
+    
+    })
+    </script>
+</body>
+</html>
