@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Marino</title>
-  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="CSS/quiz.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,76 +11,77 @@
 <body>
     <section class="header">
 <!-- -------------------------Nav Bar-------------------------- -->
-        <nav id=navbar>
-            <label for="drop" class="toggle">Menu</label>
-                <input type="checkbox" id="drop" />
-                    <ul class="menu">
-                        <li><a href="main.html">Home</a></li>
-                            <li>
-                                <label for="drop-1" class="toggle">Sunlight Zone</label>
-                                    <a href="sunlight.html">Sunlight Zone</a>
-                                        <input type="checkbox" id="drop-1"/>
-                                    <ul>
-                                        <li><a href="sunlight.html#dolphin">Dolphin</a></li>
-                                        <li><a href="sunlight.html#jellyfish">Shark</a></li>
-                                        <li><a href="sunlight.html#turtle">Turtle</a></li>
-                                </ul> 
-                            </li>
-                        <li>
-                                <label for="drop-2" class="toggle">Twilight Zone</label>
-                                    <a href="twilight.html">Twilight Zone</a>
-                                        <input type="checkbox" id="drop-2"/>
-                                    <ul>
-                                        <li><a href="twilight.html#shark">Shark</a></li>
-                                        <li><a href="twilight.html#octopus">Common Octopus</a></li>
-                                        <li><a href="twilight.html#whale">Whale</a></li>
-                                </ul> 
-                            </li>
-                        <li>
-                                <label for="drop-3" class="toggle">Midnight Zone</label>
-                                     <a href="midnight.html">Midnight Zone</a>
-                                         <input type="checkbox" id="drop-3"/>
-                                     <ul>
-                                        <li><a href="midnight.html#starfish">Starfish</a></li>
-                                        <li><a href="midnight.html#viperfish">Viperfish</a></li>
-                                        <li><a href="midnight.html#vampire">Vampire Squid</a></li>
-                                </ul> 
-                            </li>
-                        <li>
-                                <label for="drop-4" class="toggle">The Abyss</label>
-                                    <a href="abyss.html">The Abyss</a>
-                                        <input type="checkbox" id="drop-4"/>
-                                <ul>
-                                        <li><a href="abyss.html#angler">Anglerfish</a></li>
-                                        <li><a href="abyss.html#dumbo">Dumbo Octopus</a></li>
-                                        <li><a href="abyss.html#gulper">Gulper Eel</a></li>
-                                </ul> 
-                            </li>
-                        <li>
-                                <label for="drop-5" class="toggle">The Trenches</label>
-                                     <a href="trenches.html">The Trenches</a>
-                                         <input type="checkbox" id="drop-5"/>
-                                <ul>
-                                        <li><a href="trenches.html#giant">Giant Tubeworms</a></li>
-                                        <li><a href="trenches.html#amphipods">Amphipods</a></li>
-                                        <li><a href="trenches.html#cusk">Cusk Eel</a></li>
-                                </ul> 
-                            </li>
-                        <li>
-                                <label for="drop-6" class="toggle">Quizzes</label>
-                                    <a href="#">Quizzes</a>
-                                        <input type="checkbox" id="drop-6"/>
-                                <ul>
-                                        <li><a href="sunquiz.html">Sunlight Zone</a></li>
-                                        <li><a href="twiquiz.html">Twilight Zone</a></li>
-                                        <li><a href="midquiz.html">Midnight Zone</a></li>
-                                        <li><a href="abyquiz.html">Abyss Zone</a></li>
-                                        <li><a href="trequiz.html">Trenches Zone</a></li>
-                                </ul>
-                            </li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
+<nav id=navbar>
+    <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                    <li>
+                        <label for="drop-1" class="toggle">Sunlight Zone</label>
+                            <a href="sunlight.html">Sunlight Zone</a>
+                                <input type="checkbox" id="drop-1"/>
+                            <ul>
+                                <li><a href="sunlight.html#dolphin">Dolphin</a></li>
+                                <li><a href="sunlight.html#jellyfish">Shark</a></li>
+                                <li><a href="sunlight.html#turtle">Turtle</a></li>
+                        </ul> 
+                    </li>
+                <li>
+                        <label for="drop-2" class="toggle">Twilight Zone</label>
+                            <a href="twilight.html">Twilight Zone</a>
+                                <input type="checkbox" id="drop-2"/>
+                            <ul>
+                                <li><a href="twilight.html#shark">Shark</a></li>
+                                <li><a href="twilight.html#octopus">Common Octopus</a></li>
+                                <li><a href="twilight.html#whale">Whale</a></li>
+                        </ul> 
+                    </li>
+                <li>
+                        <label for="drop-3" class="toggle">Midnight Zone</label>
+                             <a href="midnight.html">Midnight Zone</a>
+                                 <input type="checkbox" id="drop-3"/>
+                             <ul>
+                                <li><a href="midnight.html#starfish">Starfish</a></li>
+                                <li><a href="midnight.html#viperfish">Viperfish</a></li>
+                                <li><a href="midnight.html#vampire">Vampire Squid</a></li>
+                        </ul> 
+                    </li>
+                <li>
+                        <label for="drop-4" class="toggle">The Abyss</label>
+                            <a href="abyss.html">The Abyss</a>
+                                <input type="checkbox" id="drop-4"/>
+                        <ul>
+                                <li><a href="abyss.html#angler">Anglerfish</a></li>
+                                <li><a href="abyss.html#dumbo">Dumbo Octopus</a></li>
+                                <li><a href="abyss.html#gulper">Gulper Eel</a></li>
+                        </ul> 
+                    </li>
+                <li>
+                        <label for="drop-5" class="toggle">The Trenches</label>
+                             <a href="trenches.html">The Trenches</a>
+                                 <input type="checkbox" id="drop-5"/>
+                        <ul>
+                                <li><a href="trenches.html#giant">Giant Tubeworms</a></li>
+                                <li><a href="trenches.html#amphipods">Amphipods</a></li>
+                                <li><a href="trenches.html#cusk">Cusk Eel</a></li>
+                        </ul> 
+                    </li>
+                <li>
+                        <label for="drop-6" class="toggle">Quizzes</label>
+                        <a href="#">Fun Quizzes&nbsp;&nbsp;</a>
+                        <input type="checkbox" id="drop-6"/>
+                        <ul>
+                                <li><a href="sunquiz.html">Sunlight Zone</a></li>
+                                <li><a href="twiquiz.html">Twilight Zone</a></li>
+                                <li><a href="midquiz.html">Midnight Zone</a></li>
+                                <li><a href="abyquiz.html">Abyss Zone</a></li>
+                                <li><a href="trequiz.html">Trenches Zone</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </nav>
 </section>
 <!-- -------------------------Quiz-------------------------- -->
 <div id="quizzie">
@@ -163,7 +164,7 @@
     </ul>
 </div>
 <!-- -------------------------Javascript-------------------------- -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="quiz.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="JS/quiz.js"></script>
   <script type="text/javascript">
     $(window).on("scroll", function() {
         if($(window).scrollTop()) {
