@@ -3,18 +3,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marino</title>
-    <link rel="stylesheet" href="main.css">
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" href="CSS/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<!-- ------------------------------------------------------------------Navbar---------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------Navbar---------------------------------------------------------------------------------------->
 <nav id=navbar>
     <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop" />
             <ul class="menu">
                 <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                     <li>
                         <label for="drop-1" class="toggle">Sunlight Zone</label>
                             <a href="sunlight.html">Sunlight Zone</a>
@@ -67,7 +67,7 @@
                     </li>
                 <li>
                         <label for="drop-6" class="toggle">Quizzes</label>
-                            <a href="#">Quizzes</a>
+                            <a href="#">Fun Quizzes&nbsp;&nbsp;</a>
                                 <input type="checkbox" id="drop-6"/>
                         <ul>
                                 <li><a href="sunquiz.html">Sunlight Zone</a></li>
@@ -77,10 +77,10 @@
                                 <li><a href="trequiz.html">Trenches Zone</a></li>
                         </ul>
                     </li>
-                <li><a href="about.html">About</a></li>
+                
             </ul>
         </nav>
-<!-- ----------------------------------------------------------------------------------Clouds and Waves---------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------Clouds and Waves---------------------------------------------------------------------------------------->
     <section class="header">
         <div class="filler one"></div>
             <div class="filler two"></div>
@@ -113,15 +113,16 @@
 
                 <div class="clouds"></div>
 
-<!-- ----------------------------------------------------------------------------Title-- ---------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------Title-- ---------------------------------------------------------------------------->
     <div class="text-box">
         <h1>Marino</h1>
         <p>Want to find out what's below the ocean surface?<br>Click Scroll</p>
     </div>
 </section>
-<!-- -----------------------------------------------------------------------------Scroll Down---------------------------------------------------------------------- -->
+<!-------------------------------------------------------------------------------Scroll Down---------------------------------------------------------------------- -->
 <section id="section04" class="demo">
-    <a href="#foot"><span></span>Scroll</a>
+    <a href="#foot"><span></span>Scroll</a> 
+    <!-- Add h2-h6 -->
 </section>
 
   <!------------------------------------------------------------------------------Cards------------------------------------------------------------------------- ---->
@@ -144,7 +145,7 @@
         <section>
             <p>700 Feet</p>
                 <h1>The Twilight Zone<br> (700-3,280 Feet)</h1>
-                    <div id="app" class="container">
+                    <div class="container">
                         <card data-image="https://images.unsplash.com/photo-1583265226992-55f9c10e2429?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
                             <h1 slot="header"><a href="twilight.html#shark">Shark</a></h1>
                             <p slot="content"><a href="twilight.html#shark"><br><br>Click here to learn more</a></p>
@@ -157,12 +158,13 @@
                             <h1 slot="header"><a href="twilight.html#whale">Whale</a></h1>
                             <p slot="content"><a href="twilight.html#whale"><br><br>Click here to learn more</a></p>
                         </card>
+                    </div>
         </section>
                                                         <!-- ---------------------------------Mightnight Zone---------------------------- -->
         <section>
             <p>3280 Feet</p>         
                 <h1>The Midnight Zone<br> (3,280 to 13,125 Feet)</h1>
-            <div id="app" class="container">
+            <div class="container">
                 <card data-image="https://images.unsplash.com/photo-1523857159215-11e46223d00b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
                     <h1 slot="header"><a href="midnight.html#starfish">Starfish</a></h1>
                     <p slot="content"><a href="midnight.html#starfish"><br><br>Click here to learn more</a></p>
@@ -175,13 +177,13 @@
                         <h1 slot="header"><a href="midnight.html#vampire">Vampire Squid</a></h1>
                         <p slot="content"><a href="midnight.html#vampire"><br><br>Click here to learn more</a></p>
                     </card>
-                </card>
+                </div>
         </section>
-                                                    <!-- ---------------------------------Twilight Zone---------------------------- -->
+                                                    <!-----------------------------------Twilight Zone---------------------------- -->
         <section>
             <p>13,125 Feet</p>
                 <h1>The Abyssal Zone<br> (13,125-19,690 Feet)</h1>
-                    <div id="app" class="container">
+                    <div class="container">
                             <card data-image="https://static01.nyt.com/images/2019/07/29/science/29SCI-ANGLERFISH1/29SCI-ANGLERFISH1-superJumbo.jpg?quality=90&auto=webp">
                                 <h1 slot="header"><a href="abyss.html#angler">Anglerfish</a></h1>
                                 <p slot="content"><a href="abyss.html#angler"><br><br>Click here to learn more</a></p>
@@ -194,12 +196,13 @@
                                 <h1 slot="header"><a href="abyss.html#gulper">Gulper Eel</a></h1>
                                 <p slot="content"><a href="abyss.html#gulper"><br><br>Click here to learn more</a></p>
                             </card>
+                        </div>
         </section>
-                                                    <!-- ---------------------------------The Trenches---------------------------- -->
+                                                    <!-----------------------------------The Trenches---------------------------- -->
         <section>
             <p >19,690 Feet</p>
             <h1>The Trenches<br> (19,690-Rock Bottom)</h1>
-                <div id="app" class="container">
+                <div class="container">
                     <card data-image="https://otlibrary.com/wp-content/uploads/2019/01/e.jpg">
                         <h1 slot="header"><a href="trenches.html#giant">Giant Tubeworms</a></h1>
                         <p slot="content"><a href="trenches.html#giant"><br><br>Click here to learn more</a></p>
@@ -212,17 +215,18 @@
                         <h1 slot="header"><a href="trenches.html#cusk">Cusk Eel</a></h1>
                         <p slot="content"><a href="trenches.html#cusk"><br><br>Click here to learn more</a></p>
                     </card>  
+                </div>
         </section>             
         <button onclick="topFunction()" id="myBtn" title="Go to top">Return Up</button>
     </div> 
 </div>
-<!-- ---------------------------------------Cards JS-------------------------------------------- -->
+<!-----------------------------------------Cards JS-------------------------------------------- -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="card.js"></script>
 
  
-<!-- ------------------------------------------------------------Sticky Nav JS-------------------------------------------- -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="nav.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="card.js"></script>
+<!--------------------------------------------------------------Sticky Nav JS-------------------------------------------- -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="JS/nav.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="JS/card.js"></script>
 <script  src="scrollback.js"></script>
 <script type="text/javascript">
 $(window).on("scroll", function() {
