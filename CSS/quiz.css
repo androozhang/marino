@@ -1,0 +1,398 @@
+/* -------------------------Background ----------------------------------------------*/
+html, body, #quizzie {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+  
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;  }
+  
+  body {
+	min-height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: 'Poppins', sans-serif; 
+	background-color: #015871; 
+}
+  
+h1 {
+	font-family: 'Poppins', sans-serif;	font-size: 2.5em;
+	color: #fff;
+}
+  
+h2, p {
+	font-family: 'Poppins', sans-serif;	font-size: 2em;
+	color: #fff
+}
+  
+h1, h2, p {
+	text-align: center;
+	display: block;
+	width: auto;
+	margin: 1%;
+	color: rgb(255, 255, 255);
+}
+  
+.try{
+	text-decoration: none;
+	color: rgb(238, 250, 255);
+	width: auto;
+	display: block;
+	font-size: 50px;
+	text-shadow:
+	0.07em 0 black,
+	0 0.07em black,
+	-0.07em 0 black,
+	0 -0.07em black;
+}
+.try:hover{
+	color: rgb(197, 239, 255);
+}
+  
+#quizzie {
+	padding: 5% 0;
+}
+#quizzie ul {
+	list-style: none;
+	display: block;
+	width: auto;
+	margin: 2% 2%;
+	padding: 2%;
+	overflow: auto;
+	display: none;
+}
+#quizzie ul.current {
+	display: block;
+}
+#quizzie ul li {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	overflow: auto;
+	text-align: center;
+}
+#quizzie ul li.quiz-answer {
+	cursor: pointer;
+}
+#quizzie ul li.question, #quizzie ul li.results-inner {
+	display: block;
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 2%;
+}
+#quizzie ul li.results-inner {
+	padding: 5% 2%;
+}
+#quizzie ul li.results-inner img {
+	width: 250px;
+}
+#quizzie ul li:last-child {
+	margin-right: 0;
+}
+#quizzie .question-wrap, #quizzie .answer-wrap {
+	display: block;
+	padding: 1%;
+	margin: 1em 10%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#quizzie .answer-wrap {
+	background: #0fa4d1;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
+	-webkit-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+}
+#quizzie .answer-wrap:hover {
+	background: #45A29E;
+}
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+  
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+  
+h3 a {
+	color: #FFF;
+}
+  
+a {
+	color: #FFF;
+}
+  
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+	font-family: 'Poppins', sans-serif;	  }
+  
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+  
+.answer-wrap p {
+	text-align: center;
+	color: #ffffff;
+	line-height: 45px;
+}
+.answer-wrap h2 {
+	text-align: center;
+	color: #ffffff;
+	line-height: 52px;	
+} 
+ /*------------------------------------------------Navbar-----------------------------------------------------------------------------*/
+nav { 
+	margin: 0;
+	padding: 0;
+	background-color: #1F2833;
+    letter-spacing: 1px;
+    width: 100%;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 10;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+.mainmenu {
+    right: 100%;
+}
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	margin: 0px;
+	float: left;
+	background-color: #1F2833;
+	}
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; 
+    z-index: 4;
+}
+	
+nav ul li:hover > ul {
+	display:inherit;
+    z-index: 4;
+}
+	
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+    z-index: 4;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
+    z-index: 4;
+}
+li > a:only-child:after { content: ''; }
+
+
+/* -----------------------------------Media Queries--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+#logo {
+	display: block;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+
+nav {
+	margin: 0;
+
+}
+
+.toggle + a,
+.menu {
+	display: none;
+
+}
+.toggle {
+	display: block;
+	background-color: #1F2833;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+	border:none;
+}
+
+.toggle:hover {
+	background-color: #000000;
+}
+[id^=drop]:checked + ul {
+	display: block;
+}
+nav ul li {
+	display: block;
+	width: 100%;
+	}
+
+nav ul ul .toggle,
+nav ul ul a {
+	padding: 0 40px;
+}
+
+nav ul ul ul a {
+	padding: 0 80px;
+}
+
+nav a:hover,
+nav ul ul ul a {
+	background-color: #000000;
+}
+
+nav ul li ul li .toggle,
+nav ul ul a,
+nav ul ul ul a{
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px; 
+}
+
+
+nav ul li ul li .toggle,
+nav ul ul a {
+	background-color: #212121; 
+}
+nav ul ul {
+	float: none;
+	position:static;
+	color: #ffffff;
+	}
+	
+nav ul ul li:hover > ul,
+nav ul li:hover > ul {
+	display: none;
+}
+	
+nav ul ul li {
+	display: block;
+	width: 100%;
+}
+
+nav ul ul ul li {
+	position: static;
+
+
+}
+.card{
+	width: 1rem;
+}
+.foot p{
+	opacity: 0;
+}
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+/* -------------------------Scrollbar ----------------------------------------------*/
+  ::-webkit-scrollbar {
+    height: 0px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
