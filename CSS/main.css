@@ -24,6 +24,27 @@ body {
     font-family: 'Poppins', sans-serif;	
     -webkit-font-smoothing: antialiased;
 }
+body,
+html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#fixed {
+    background: red;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#content {
+    background: blue;
+    height: 3000px;
+}
+  
 /* ----Prob Useless-------------------------------------------------------------------------------------------------- */
   section::after h{
     position: absolute;
@@ -191,8 +212,7 @@ p {
 
 .text-box h1{
     color: #1F2833;
-    
-    
+    font-family: 'Sniglet', cursive;
 }
 
 /*------------------------------------------------Navbar-----------------------------------------------------------------------------*/
