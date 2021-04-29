@@ -51,20 +51,97 @@ h1, h2, p {
   
 .try{
 	text-decoration: none;
-	color: rgb(238, 250, 255);
+	color: rgb(255, 255, 255);
 	width: auto;
 	display: block;
 	font-size: 50px;
-	text-shadow:
-	0.07em 0 black,
-	0 0.07em black,
-	-0.07em 0 black,
-	0 -0.07em black;
+	font-weight: 100px;
+	top: 100%;
+	position: relative;
 }
 .try:hover{
 	color: rgb(197, 239, 255);
 }
-  
+.try {
+	background: #b621fe;
+	border: none;
+	z-index: 1;
+  }
+  .try:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #663dff;
+	border-radius: 5px;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	transition: all 0.3s ease;
+  }
+  .try:hover {
+	color: #fff;
+  }
+  .try:hover:after {
+	left: 0;
+	width: 100%;
+  }
+  .try:active {
+	top: 2px;
+  } 
+  .custom-btn {
+	width: 200px;
+	height: 50px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+	text-decoration: none;
+  }
+  .btn-15 {
+	background: #52c0f3;
+	border: none;
+	z-index: 1;
+	margin-top: 3%;
+  }
+  .btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background-color: #56aad1;
+	border-radius: 5px;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+	color: #fff;
+  }
+  .btn-15:hover:after {
+	left: 0;
+	width: 100%;
+  }
+  .btn-15:active {
+	top: 2px;
+  }
 #quizzie {
 	padding: 5% 0;
 }
@@ -97,6 +174,7 @@ h1, h2, p {
 	text-align: center;
 	margin: 0;
 	margin-bottom: 2%;
+	margin-top: -5%;
 }
 #quizzie ul li.results-inner {
 	padding: 5% 2%;
@@ -168,6 +246,9 @@ h1 {
 	color: #ffffff;
 	line-height: 52px;	
 } 
+.results-inner p{
+	margin-bottom: 0%;
+}
  /*------------------------------------------------Navbar-----------------------------------------------------------------------------*/
 nav { 
 	margin: 0;
