@@ -849,9 +849,11 @@ a {
     padding: 10px 2px;
 }
 .about-col img{
-    
+    position: relative;
+    left: 25%;
     width: auto;
     height: 305px;
+    justify-content: space-between;
 }
 
 .about-col h1{
@@ -894,7 +896,9 @@ a {
 .app {
     text-decoration: none;
 }
-
+h6{
+    text-align: center;
+}
 /*-----------------------------return top----------------------------------------------*/
 #myBtn {
     display: none; 
