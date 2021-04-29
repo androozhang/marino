@@ -1,149 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marino</title>
-    <link rel="stylesheet" href="CSS/animal.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <meta charset="UTF-8">
+  <title>Marino</title>
+  <link rel="stylesheet" href="CSS/quiz.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-<!-- -------------------------Nav Bar-------------------------- -->
-<nav id=navbar>
-    <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop" />
-            <ul class="menu">
-                <li><a href="main.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                    <li>
-                        <label for="drop-1" class="toggle">Sunlight Zone</label>
-                            <a href="sunlight.html">Sunlight Zone</a>
-                                <input type="checkbox" id="drop-1"/>
-                            <ul>
-                                <li><a href="sunlight.html#dolphin">Dolphin</a></li>
-                                <li><a href="sunlight.html#jellyfish">Shark</a></li>
-                                <li><a href="sunlight.html#turtle">Turtle</a></li>
-                        </ul> 
-                    </li>
-                <li>
-                        <label for="drop-2" class="toggle">Twilight Zone</label>
-                            <a href="twilight.html">Twilight Zone</a>
-                                <input type="checkbox" id="drop-2"/>
-                            <ul>
-                                <li><a href="twilight.html#shark">Shark</a></li>
-                                <li><a href="twilight.html#octopus">Common Octopus</a></li>
-                                <li><a href="twilight.html#whale">Whale</a></li>
-                        </ul> 
-                    </li>
-                <li>
-                        <label for="drop-3" class="toggle">Midnight Zone</label>
-                             <a href="midnight.html">Midnight Zone</a>
-                                 <input type="checkbox" id="drop-3"/>
-                             <ul>
-                                <li><a href="midnight.html#starfish">Starfish</a></li>
-                                <li><a href="midnight.html#viperfish">Viperfish</a></li>
-                                <li><a href="midnight.html#vampire">Vampire Squid</a></li>
-                        </ul> 
-                    </li>
-                <li>
-                        <label for="drop-4" class="toggle">The Abyss</label>
-                            <a href="abyss.html">The Abyss</a>
-                                <input type="checkbox" id="drop-4"/>
-                        <ul>
-                                <li><a href="abyss.html#angler">Anglerfish</a></li>
-                                <li><a href="abyss.html#dumbo">Dumbo Octopus</a></li>
-                                <li><a href="abyss.html#gulper">Gulper Eel</a></li>
-                        </ul> 
-                    </li>
-                <li>
-                        <label for="drop-5" class="toggle">The Trenches</label>
-                             <a href="trenches.html">The Trenches</a>
-                                 <input type="checkbox" id="drop-5"/>
-                        <ul>
-                                <li><a href="trenches.html#giant">Giant Tubeworms</a></li>
-                                <li><a href="trenches.html#amphipods">Amphipods</a></li>
-                                <li><a href="trenches.html#cusk">Cusk Eel</a></li>
-                        </ul> 
-                    </li>
-                <li>
-                        <label for="drop-6" class="toggle">Quizzes</label>
-                        <a href="#">Fun Quizzes&nbsp;&nbsp;</a>
-                        <input type="checkbox" id="drop-6"/>
-                        <ul>
-                                <li><a href="sunquiz.html">Sunlight Zone</a></li>
-                                <li><a href="twiquiz.html">Twilight Zone</a></li>
-                                <li><a href="midquiz.html">Midnight Zone</a></li>
-                                <li><a href="abyquiz.html">Abyss Zone</a></li>
-                                <li><a href="trequiz.html">Trenches Zone</a></li>
-                        </ul>
-                    </li>
-                
-            </ul>
-        </nav>
-<!-- -------------------------Sub Header-------------------------- -->
-<section class="sub-header">
-        <h1>The Midnight Zone</h1>
-        <p>Sunlight is unable to reach this far into the ocean, causing this zone to be completely dark. <br>Any light source that exists from here on down, comes from cool features that animals have themselves.</p>
-        <p>3,280 to 13,125 Feet</p>
+    <section class="header">
+        <!-- -------------------------Navbar-------------------------- -->
+        <nav id=navbar>
+            <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop" />
+                    <ul class="menu">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                            <li>
+                                <label for="drop-1" class="toggle">Sunlight Zone</label>
+                                    <a href="sunlight.html">Sunlight Zone</a>
+                                        <input type="checkbox" id="drop-1"/>
+                                    <ul>
+                                        <li><a href="sunlight.html#dolphin">Dolphin</a></li>
+                                        <li><a href="sunlight.html#jellyfish">Shark</a></li>
+                                        <li><a href="sunlight.html#turtle">Turtle</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-2" class="toggle">Twilight Zone</label>
+                                    <a href="twilight.html">Twilight Zone</a>
+                                        <input type="checkbox" id="drop-2"/>
+                                    <ul>
+                                        <li><a href="twilight.html#shark">Shark</a></li>
+                                        <li><a href="twilight.html#octopus">Common Octopus</a></li>
+                                        <li><a href="twilight.html#whale">Whale</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-3" class="toggle">Midnight Zone</label>
+                                     <a href="midnight.html">Midnight Zone</a>
+                                         <input type="checkbox" id="drop-3"/>
+                                     <ul>
+                                        <li><a href="midnight.html#starfish">Starfish</a></li>
+                                        <li><a href="midnight.html#viperfish">Viperfish</a></li>
+                                        <li><a href="midnight.html#vampire">Vampire Squid</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-4" class="toggle">The Abyss</label>
+                                    <a href="abyss.html">The Abyss</a>
+                                        <input type="checkbox" id="drop-4"/>
+                                <ul>
+                                        <li><a href="abyss.html#angler">Anglerfish</a></li>
+                                        <li><a href="abyss.html#dumbo">Dumbo Octopus</a></li>
+                                        <li><a href="abyss.html#gulper">Gulper Eel</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-5" class="toggle">The Trenches</label>
+                                     <a href="trenches.html">The Trenches</a>
+                                         <input type="checkbox" id="drop-5"/>
+                                <ul>
+                                        <li><a href="trenches.html#giant">Giant Tubeworms</a></li>
+                                        <li><a href="trenches.html#amphipods">Amphipods</a></li>
+                                        <li><a href="trenches.html#cusk">Cusk Eel</a></li>
+                                </ul> 
+                            </li>
+                        <li>
+                                <label for="drop-6" class="toggle">Quizzes</label>
+                                <a href="#">Fun Quizzes&nbsp;&nbsp;</a>
+                                <input type="checkbox" id="drop-6"/>
+                                <ul>
+                                        <li><a href="sunquiz.html">Sunlight Zone</a></li>
+                                        <li><a href="twiquiz.html">Twilight Zone</a></li>
+                                        <li><a href="midquiz.html">Midnight Zone</a></li>
+                                        <li><a href="abyquiz.html">Abyss Zone</a></li>
+                                        <li><a href="trequiz.html">Trenches Zone</a></li>
+                                </ul>
+                            </li>
+                        
+                    </ul>
+                </nav>
 </section>
-<!-- -----Starfish Content------ -->
-<section id=starfish class="starfish">
-    <div class="row">
-        <div class="starfish-col">
-            <h1>Starfish</h1>
-            <p>"Oh hey, it's Patrick!" Just kidding. Starfish actually exist in real life. Surprisingly, they have no brain, which perfectly describes why Spongebob's pink 
-                friend acts the way he does. It might be hard to see, but starfish have hundreds of feet, which help them cling to their environment. Chopping off a leg or 
-                two means nothing to starfishes since they can regenerate their arms in just months.</p>
-        </div>
-        <div class="starfish-col img">
-            <img src="https://images.unsplash.com/photo-1534837306493-691bb3cb0db2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Starfish">
-        </div>
-    </div>
-</section>
-<!-- -----Viperfish Content------ -->
-<section id=viperfish class="viperfish">
-    <div class="row">
-        <div class="viperfish-col">
-            <h1>Viperfish</h1>
-            <p>Viperfish live in deep parts of the ocean where it is so dark that they are invisible to other fish, making them one of the most fierce predators living in the deep ocean. 
-                They use photophores along the side of their bodies to help hide their body from other fish swimming beneath them. A lot like the anglerfish, they use a "fishing lure" 
-                on top of their head to attract prey. These fish have large fang-like teeth that can curve over the prey's head and almost to their eyes when their mouth is closed.
-                 During the day, they hunt prey around 5,000 feet (1,500 meters) below the surface where almost no light can penetrate through the water. As it turns to night, they move up to
-                around 2,000 feet (600 meters) to search for food where it is more plentiful at shallower depths.
-            </p>
-        </div>
-        <div class="viperfish-col img">
-            <img src="https://reefnation.com/wp-content/uploads/2015/07/dscf5166-90488.jpg" alt="Viperfish">
-        </div>
-    </div>
-</section>
-<!-- -----Vampire Squid Content------ -->
-<section id=vampire class="vampire">
-    <div class="row">
-        <div class="vampire-col">
-            <h1>Vampire Squid</h1>
-            <p>Living 3,000 feet below sea level, these creatures use bioluminescent organs and oxygen metabolism to survive the parts of water that have extremely low levels of oxygen.
-                 They are considered both a squid and an octopus, but can be argued that they are neither. The name vampire squid comes from its dark color and the skin that connects all of its 
-                 arms forming a cape-like structure like a vampire's cape. Each one of their eight arms has spines that are arranged into two rows. They have one of the largest eyes in 
-                 comparison to the size of their body. Their eyes are either red or blue depending on the environment.
-            </p>
-        </div>
-        <div class="vampire-col img">
-            <img src="https://www.abc.net.au/reslib/201504/r1414895_20295655.JPG" alt="Vampire">
-        </div>
-    </div>
-</section>
-<!-- -------------------------Return Up-------------------------- -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Return Up</button>
-<!-- ---CTA--- -->
-<section class="cta">
-    <h1>Think you're ready for the quiz?</h1>
-    <a href="midquiz.html" class="hero-btn">Click Here</a>
-</section>
-
-<!-- -------------------------JavaScript-------------------------- -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="JS/nav.js"></script>
-<script  src="JS/scrollback.js"></script>
+<!-- -------------------------Quiz-------------------------- -->
+<div id="quizzie">
+  <h1>Midnight Zone Quiz</h1>
+    <ul class="quiz-step step1 current">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #1: Starfish can not regenerate their body</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">True</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap"> 
+                <p class="answer-text">False</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step2">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #2: What do viperfish use to help their body from other fish?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">"Fishing lure"</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Photophores</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step3">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #3: What color are Vampire Squid's eyes?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Green or Yellow</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Red or Blue</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step4">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question #4: How many feet on average does a starfish have?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" data-quizIndex="2">
+            <div class="answer-wrap">
+                <p class="answer-text">Thousands</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" data-quizIndex="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Hundreds</p>
+            </div>
+        </li>
+    </ul>
+    <ul id="results">
+        <li class="results-inner">
+            <p>Your result is:</p>
+            <h1></h1>
+            <p class="desc"></p>
+            <a href="abyquiz.html" class="custom-btn btn-15">Try Again</a>
+        </li>
+    </ul>
+</div>
+<!-- -------------------------Javascript-------------------------- -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="JS/quiz.js"></script>
+  <script type="text/javascript">
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+        
+        else{
+            $('nav').removeClass('black');
+        }
+    
+    })
+    </script>
 </body>
 </html>
