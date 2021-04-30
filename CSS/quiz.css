@@ -105,9 +105,6 @@ h1, h2, p {
 	transition: all 0.3s ease;
 	position: relative;
 	display: inline-block;
-	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-	 7px 7px 20px 0px rgba(0,0,0,.1),
-	 4px 4px 5px 0px rgba(0,0,0,.1);
 	outline: none;
 	text-decoration: none;
   }
@@ -127,9 +124,6 @@ h1, h2, p {
 	z-index: -1;
 	background-color: #56aad1;
 	border-radius: 5px;
-	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-	 7px 7px 20px 0px rgba(0,0,0,.1),
-	 4px 4px 5px 0px rgba(0,0,0,.1);
 	transition: all 0.3s ease;
   }
   .btn-15:hover {
@@ -239,7 +233,14 @@ h1 {
 .answer-wrap p {
 	text-align: center;
 	color: #ffffff;
-	line-height: 45px;
+	line-height: 50px;
+}
+@media (max-width: 768px){
+	.answer-wrap p {
+		text-align: center;
+		color: #ffffff;
+		line-height: 25px;
+	}
 }
 .answer-wrap h2 {
 	text-align: center;
@@ -429,6 +430,19 @@ nav ul ul ul li {
 }
 .foot p{
 	opacity: 0;
+}
+
+.question-wrap h2{
+	line-height: 30px;
+	font-weight: lighter;
+	font-size: 25px;
+}
+.answer-text {
+	font-size: 20px;
+	font-weight: lighter;
+}
+.results-inner p{
+	line-height: 45px;
 }
 }
 
