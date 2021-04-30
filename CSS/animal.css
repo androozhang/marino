@@ -130,6 +130,96 @@ li > a:only-child:after { content: ''; }
 
 /* -----------------------------------Media Queries--------------------------------------------- */
 
+@media all and (min-width : 768px) and (max-width: 1024px) {
+
+	
+	nav {
+		margin: 0;
+
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+        
+	}
+	.toggle {
+		display: block;
+		background-color: #1F2833;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:22px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+	nav ul li {
+		display: block;
+		width: 100%;
+        
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+    
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+    	}
+		
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+
+    
+	}
+    .card{
+        width: 1rem;
+    }
+    .foot p{
+        opacity: 0;
+    }
+}
 @media all and (max-width : 768px) {
 
 	#logo {
@@ -226,7 +316,6 @@ li > a:only-child:after { content: ''; }
         opacity: 0;
     }
 }
-
 @media all and (max-width : 330px) {
 
 	nav ul li {
@@ -812,20 +901,78 @@ a {
     background-size: cover;
     text-align: center;
     color: #fff;
-    margin-top: -1.52%;
-}
-@media(max-width: 700px){   
-.sub-header{
-    height: 80vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(15, 69, 119, 0.7)),url(https://images.unsplash.com/photo-1548266652-99cf27701ced?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
+    margin-top: -1.535%;
+    top: 0%;
     
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 10px 2px;
+}
+.about-col img{
+    position: relative;
+    left: 25%;
+    width: auto;
+    height: 305px;
+    justify-content: space-between;
+}
+h6{
+    left: 35%;
+    
+}
+.about-col h1{
+    padding-top: 0;
+    top: 10%;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    font-size: 20px;
+}
+@media (max-width: 700px){
+    .sub-header{
+        height: 80vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(15, 69, 119, 0.7)),url(https://images.unsplash.com/photo-1548266652-99cf27701ced?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: -10%;
+        }
+}
+@media (max-width: 768px) {
+    .about-col img {
+        width: 300px;
+        height : auto;
+        left : 0%;
+        position : relative;
     }
-   }
+    h6 {
+        opacity : 0;
+    }
+    .sub-header {
+        height : 50vh;
+    }
+}
+@media(max-width: 1024px) and (min-width: 768px){   
+    .sub-header{
+        height: 40vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(15, 69, 119, 0.7)),url(https://images.unsplash.com/photo-1548266652-99cf27701ced?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        margin-top: -13%;
+        }
+    .sub-header p{
+        color: #fff;
+        top: 20%;
+        position: relative;
+        text-align: left;
+        padding: 0 25%;
+    }
+}
 .sub-header h1{
     color: #fff;
     top: 20%;
@@ -848,14 +995,6 @@ a {
     flex-basis: 48%;
     padding: 10px 2px;
 }
-.about-col img{
-    position: relative;
-    left: 25%;
-    width: auto;
-    height: 305px;
-    justify-content: space-between;
-}
-
 .about-col h1{
     padding-top: 0;
     top: 10%;
@@ -888,7 +1027,8 @@ a {
     transition: 1s;
 }
 .hero-btn{
-    text-decoration: none;
+    
+    color: rgb(255, 255, 255);
 }
 .hero-btn:hover{
     color: rgb(223, 223, 223);
@@ -919,3 +1059,4 @@ h6{
   #myBtn:hover {
     background-color: rgb(10, 91, 102); 
   }
+  
