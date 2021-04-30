@@ -142,7 +142,9 @@ h3 a {
     color: #FFF;
 }
 
-
+.cool p{
+    color: #fff;
+}
 
 a {
 	color: #FFF;
@@ -420,7 +422,19 @@ li > a:only-child:after { content: ''; }
 	}
 
 }
-
+@media(max-width: 768px) and (min-width: 700px){
+    .info{
+        bottom: 30%;
+        position: absolute;
+        text-align: center;
+        right: 41%;
+    }
+}
+@media(max-width: 700px) {
+    .info{
+        opacity: 0;
+    }
+}
 /* ----Animal-------------------------------------------------------------------------------------------------- */
 
 
@@ -744,6 +758,13 @@ li > a:only-child:after { content: ''; }
     -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
             animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     transform: translate3d(0, 0, 0);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
 }
   
 .wave:nth-of-type(2) {
@@ -751,6 +772,7 @@ li > a:only-child:after { content: ''; }
     -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
             animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
     opacity: 1;
+    
 }
   
   @-webkit-keyframes wave {
