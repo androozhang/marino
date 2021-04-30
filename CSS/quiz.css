@@ -235,6 +235,9 @@ h1 {
 	color: #ffffff;
 	line-height: 50px;
 }
+.question-wrap h2{
+	line-height: 50px;
+}
 @media (max-width: 768px){
 	.answer-wrap p {
 		text-align: center;
@@ -495,4 +498,4 @@ nav ul ul ul li {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
