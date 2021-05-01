@@ -928,7 +928,7 @@ h6{
     padding: 15px 0 25px;
     font-size: 20px;
 }
-@media (max-width: 700px){
+@media (max-width: 768px){
     .sub-header{
         height: 80vh;
         width: 100%;
@@ -939,6 +939,9 @@ h6{
         color: #fff;
         margin-top: -10%;
         }
+    .sub-header h1{
+        font-size: 30px;
+    }
 }
 @media (max-width: 768px) {
     .about-col img {
