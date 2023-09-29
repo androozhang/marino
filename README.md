@@ -28,7 +28,7 @@ The Marino website is divided into several sections and pages, each dedicated to
 
 Here are some screenshots of the Marino website:
 
-1. ![Screenshot 1](https://i.imgur.com/m9RDeJv.png)
+![Screenshot 1](https://i.imgur.com/m9RDeJv.png)
 
 ## Getting Started
 
