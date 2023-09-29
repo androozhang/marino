@@ -651,6 +651,24 @@ li > a:only-child:after { content: ''; }
        width: 15em;
     }
 }
+
+@media screen and (max-width: 1700px) {
+    .card {
+       width: 16em;
+       height: 300px;
+    }
+    .card a {
+        text-decoration: none;
+        transition:0.1s;
+        font-size: 25px;
+        left: 20%;
+    }
+
+    .card p {
+        left: 15%;
+    }
+}
+
 .card a {
     text-decoration: none;
     transition:0.1s;
