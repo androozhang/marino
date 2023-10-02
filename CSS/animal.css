@@ -19,8 +19,9 @@ body {
 	color: #ffffff;
 	margin: 0;
 	padding: 0;
-	word-wrap:break-word !important;
     font-family: 'Poppins', sans-serif;	
+    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 html {
 	scroll-behavior: smooth;
@@ -51,8 +52,7 @@ nav {
 	background-color: #1F2833;
     letter-spacing: 1px;
     width: 100%;
-    position: -webkit-sticky;
-	position: sticky;
+    position: fixed;
 	top: 0;
     z-index: 10;
 }
@@ -893,18 +893,18 @@ a {
 
 
 /* -----about us page---------------------------------------------------------------------- */
-.sub-header{
-    height: 50vh;
+
+.sub-header {
+    height: 55vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(15, 69, 119, 0.7)),url(https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(15, 69, 119, 0.7)), url(https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
-    margin-top: -1.535%;
-    top: 0%;
-    
+    margin-top: 0;
 }
+
 .about-col{
     flex-basis: 48%;
     padding: 10px 2px;
@@ -937,7 +937,7 @@ h6{
         background-size: cover;
         text-align: center;
         color: #fff;
-        margin-top: -10%;
+        margin-top: 0;
         }
     .sub-header h1{
         font-size: 30px;
@@ -966,7 +966,7 @@ h6{
         background-size: cover;
         text-align: center;
         color: #fff;
-        margin-top: -13%;
+        margin-top: 0;
         }
     .sub-header p{
         color: #fff;
